@@ -1,27 +1,30 @@
-✈️ Flight Delay Prediction for Hartsfield–Jackson Atlanta International Airport
+**✈️ Flight Delay Prediction for Hartsfield–Jackson Atlanta International Airport**
 
 📌 Overview
 
 This project features a serverless machine learning pipeline designed to predict flight delays at Hartsfield-Jackson Atlanta International Airport (ATL). Predictions are based on historical flight delay records and meteorological data.
 
-📂 Repository Contents
+**📂 Repository Contents**
 
 ✅ Flight Information & Weather Data (2024) - Includes flight and atmospheric conditions at ATL.
 
 ✅ Interactive Graphical User Interface (GUI) built using Gradio.
 
 🔗 Live Interface: Explore the Model on Hugging Face
-
-🏗️ System Architecture
+**
+🏗️ System Architecture**
 
 The serverless architecture ensures scalability and flexibility. The pipeline runs as scheduled tasks, eliminating the need for manual intervention. The workflow includes:
 
 1️⃣ Data Acquisition & Processing
-2️⃣ Feature Engineering
-3️⃣ Model Training & Hyperparameter Optimization
-4️⃣ Prediction Generation & Deployment
 
-📊 Models Implemented
+2️⃣ Feature Engineering
+
+3️⃣ Model Training & Hyperparameter Optimization
+
+4️⃣ Prediction Generation & Deployment
+**
+📊 Models Implemented**
 
 XGBoost 🌳
 
@@ -31,7 +34,7 @@ Ridge Regressor 📈
 
 🔧 Hyperparameter Optimization: Optuna was used for fine-tuning model performance.
 
-🔄 Pipeline Breakdown
+**🔄 Pipeline Breakdown**
 
 🗂️ 1. Historical Data Acquisition & Processing
 
@@ -42,7 +45,7 @@ This phase gathers and preprocesses data from multiple sources:
 
 📊 Processed datasets are stored as Feature Groups within Hopsworks.
 
-🛠️ 2. Feature Engineering & Model Training
+**🛠️ 2. Feature Engineering & Model Training**
 
 Following initial data preparation, additional feature engineering is performed:
 
@@ -59,7 +62,7 @@ Correlation Matrix Examination 🔗 (reducing multicollinearity)
 
 Feature Importance Tests ⭐ (eliminating low-impact features)
 
-📌 Final Model Training:
+**📌 Final Model Training:**
 
 XGBoost, MLP, and Ridge Regressor were trained.
 
@@ -67,7 +70,7 @@ Optuna was used for hyperparameter tuning.
 
 Models were stored in Hopsworks Model Registry.
 
-🎯 3. Fine-Tuning & Additional Training
+**🎯 3. Fine-Tuning & Additional Training**
 
 Further fine-tuning was explored with the MLP model, trained on alternative datasets:
 
@@ -131,7 +134,7 @@ MLP (Zylalabs & OpenMeteo): MSE: 0.90, R²: 0.08 ❌
 🔍 Optuna - Hyperparameter Tuning
 📈 Plotly - Data Visualization
 
-🔧 Running the Code
+**🔧 Running the Code**
 
 📌 To view the UI, simply follow the Hugging Face Space link.
 https://huggingface.co/Feranmii/airport_delay
